@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.home.dao.AnnonceDAO;
+import com.home.scrap.AnnonceScrap;
 import com.home.entities.SousCategorie;
 
 /**
@@ -34,7 +34,7 @@ public class ScrapingServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HashMap<SousCategorie,Integer> statistics = AnnonceDAO.getAllStatistics(); 
+		HashMap<SousCategorie,Integer> statistics = AnnonceScrap.getAllStatistics(); 
 
 		Iterator<Integer> it = statistics.values().iterator();
 		ArrayList<Integer> values= new ArrayList<Integer>();

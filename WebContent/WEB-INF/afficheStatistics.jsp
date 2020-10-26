@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<h1 style="font-family: Georgia, serif">Les statistiques d'Avito pour Aujourd'hui</h1>
+	<h1 style="font-family: Georgia, serif">Les statistiques d'Avito pour Aujourd'hui (2019)</h1>
 	<br>
 	<!--  <table>		
 		<tr>
